@@ -1,2 +1,2 @@
 # JavaScript calculator
-This calculator is created using JavaScript, html and css.
+This calculator is created using html, css and JavaScript.
