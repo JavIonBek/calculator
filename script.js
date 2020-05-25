@@ -3,7 +3,7 @@ $(document).ready(function () {
  	var isEqual = false;
  	var displayVal = $('#Display').val();
 
-	// Tugmani bosganda ekranga chiqarish
+	// Display when the button is pressed
 	$('.btn').on('click', function () {
 		var btnValue = $(this).text();
 	    if(btnValue == '+' || btnValue == '-' || btnValue == '/' || btnValue == '*') {
@@ -25,14 +25,14 @@ $(document).ready(function () {
 	    isEqual = false;
 	});
 
-	// Natijani chiqarish
+	// Output
 	$('#result').on('click', function () {
 	    $('#Display').val( eval( displayVal ) ); 
 	    isOperation = false;
 	    isEqual = true;
 	});	
 
-	// Ekranni tozalash
+	// Clear the screen
 	$('#clear').on('click', function () {
 	    $('#Display').val('');
 	    displayVal = '';
